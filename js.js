@@ -1,9 +1,13 @@
-let val = document.querySelector('#txt')
+let val = document.querySelector('.txt')
 
 function check() {
-    var txt = document.getElementById("txt").ariaValueMax;
-    if(txt % 2)
+    
+    if(val.value % 2 == 0)
     {
-        alert("Value is Even");
+        document.getElementById("output").value = "Even";
+    }
+    else
+    {
+        document.getElementById("output").value = "Odd";
     }
 }
